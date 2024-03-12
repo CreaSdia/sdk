@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crea_CaSdkComercial", "Crea_CaSdkComercial\Crea_CaSdkComercial.csproj", "{11223C28-4C77-4851-B1CB-D65589F7F5A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crea_WebSdkComercial", "Crea_WebSdkComercial\Crea_WebSdkComercial.csproj", "{D4F37317-C717-40FA-92F3-3557C7EE0891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11223C28-4C77-4851-B1CB-D65589F7F5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11223C28-4C77-4851-B1CB-D65589F7F5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11223C28-4C77-4851-B1CB-D65589F7F5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11223C28-4C77-4851-B1CB-D65589F7F5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F37317-C717-40FA-92F3-3557C7EE0891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F37317-C717-40FA-92F3-3557C7EE0891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F37317-C717-40FA-92F3-3557C7EE0891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F37317-C717-40FA-92F3-3557C7EE0891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
