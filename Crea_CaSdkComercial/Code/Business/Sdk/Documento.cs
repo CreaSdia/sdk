@@ -83,6 +83,7 @@ namespace SdkCreaComercial.Business.Sdk
             
 
             SdkDocumento = sdkDocumento;
+            Moneda = moneda;
         }
     }
 
