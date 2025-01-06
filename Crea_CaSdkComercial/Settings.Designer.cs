@@ -12,7 +12,7 @@ namespace Crea_CaSdkComercial {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.11.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -157,7 +157,8 @@ namespace Crea_CaSdkComercial {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Crea_4\\Crea_CaSdk_Comercial\\Layout\\Layout_SDK_NC.xlsx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Romeo\\Documents\\Proyectos\\Personal\\Sdia\\Sdk\\sdk\\Crea_CaSdkComercial\\Docu" +
+            "mentos\\Layout_SDK_REP.xlsx")]
         public string PathLayoutRecurrente {
             get {
                 return ((string)(this["PathLayoutRecurrente"]));

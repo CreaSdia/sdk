@@ -36,7 +36,7 @@
       <Value Profile="(Default)">Entrega Documento Pago</Value>
     </Setting>
     <Setting Name="PathLayoutRecurrente" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Crea_4\Crea_CaSdk_Comercial\Layout\Layout_SDK_NC.xlsx</Value>
+      <Value Profile="(Default)">C:\Users\Romeo\Documents\Proyectos\Personal\Sdia\Sdk\sdk\Crea_CaSdkComercial\Documentos\Layout_SDK_REP.xlsx</Value>
     </Setting>
     <Setting Name="ReplyTo" Type="System.String" Scope="User">
       <Value Profile="(Default)">pem@bideli.mx</Value>

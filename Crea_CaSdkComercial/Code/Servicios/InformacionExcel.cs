@@ -243,6 +243,7 @@ namespace Crea_CaSdkComercial.Code.Servicios
         private MovimientoPago ObtenerMovimientoPago(int fila)
         {
             var ws = _datos.Worksheet;
+            var moneda = ws.Cells[fila, _datos.CamposDocumento["CIDMONEDA"]].Text;
 
             var movimiento = new MovimientoPago
             {
@@ -250,6 +251,7 @@ namespace Crea_CaSdkComercial.Code.Servicios
                 Serie = ws.Cells[fila, _datos.CamposDocumento["cseriefactura"]].Text,
                 Folio = Convert.ToDouble(ws.Cells[fila, _datos.CamposDocumento["cfoliofactura"]].Text),
                 Importe = Convert.ToDouble(ws.Cells[fila, _datos.CamposDocumento["abono"]].Text),
+                Moneda = string.IsNullOrEmpty(moneda) ? 1 :  Convert.ToInt32(moneda),
                 FilaExcel = fila
             };
 
