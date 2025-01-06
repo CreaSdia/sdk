@@ -648,7 +648,7 @@ namespace SdkCreaComercial.Sdk
                 folio = documento.Folio
             };
 
-            var errorId = fSaldarDocumento(ref factura, ref documentoCargo, movimiento.Importe, movimiento.Moneda, documento.Fecha);
+            var errorId = fSaldarDocumento(ref factura, ref documentoCargo, movimiento.Importe, documento.Moneda, documento.Fecha);
             _error = GetError(errorId, "fSaldarDocumento");
         }
 
