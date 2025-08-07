@@ -72,6 +72,7 @@
     <Compile Include="Code\Business\Sdk\Constantes.cs" />
     <Compile Include="Code\Business\Sdk\Documento.cs" />
     <Compile Include="Code\Business\Sdk\Estructuras.cs" />
+    <Compile Include="Code\Business\Sdk\FacturaAdenda.cs" />
     <Compile Include="Code\Business\Sdk\Movimiento.cs" />
     <Compile Include="Code\Business\Sdk\MovimientosPago.cs" />
     <Compile Include="Code\Business\Sdk\Producto.cs" />

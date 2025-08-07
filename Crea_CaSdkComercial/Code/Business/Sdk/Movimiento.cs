@@ -19,6 +19,9 @@ namespace SdkCreaComercial.Business.Sdk
         public List<SerieCapa> SerieCapas { get; set; } = new List<SerieCapa>();
         public SerieCapa SerieCapa { get; set; }
 
+        public List<CampoAdicional> AddendaFactura =>
+            this.CamposAdicionales.Where(e => e.TipoCampo == "adenda").ToList();
+
         public Movimiento (){}
 
         public Movimiento(bool asignarLote, List<CampoAdicional> camposAdicionales, int fila = 0)

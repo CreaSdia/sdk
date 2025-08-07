@@ -488,6 +488,8 @@ namespace SdkCreaComercial.Sdk
 
             BorrarDocumento(documento.DocumentoId);
 
+
+
             error = GenerarArchivos(documento);
 
             return error;
@@ -557,7 +559,7 @@ namespace SdkCreaComercial.Sdk
             {
                 AltaMovimientoSerieCapa(movimientoId, serieCapa);
             }
-
+            //todo aca insertar los datos de la addenda
             return _error;
         }
 

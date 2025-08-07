@@ -24,7 +24,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="PasswordLlavePrivada" Type="System.String" Scope="User">
-      <Value Profile="(Default)">S3y0$sd1@.18</Value>
+      <Value Profile="(Default)">12345678a</Value>
     </Setting>
     <Setting Name="UsuarioContpaq" Type="System.String" Scope="User">
       <Value Profile="(Default)">Supervisor</Value>
@@ -34,9 +34,6 @@
     </Setting>
     <Setting Name="CuerpoCorreo" Type="System.String" Scope="User">
       <Value Profile="(Default)">Entrega Documento Pago</Value>
-    </Setting>
-    <Setting Name="PathLayoutRecurrente" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Crea_4\Crea_CaSdk_Comercial\Layout\Layout_SDK_REP.xlsx</Value>
     </Setting>
     <Setting Name="ReplyTo" Type="System.String" Scope="User">
       <Value Profile="(Default)">pem@bideli.mx</Value>
@@ -48,7 +45,7 @@
       <Value Profile="(Default)">C:\Compac\Empresas\#BASEDATOS#\XML_SDK\</Value>
     </Setting>
     <Setting Name="PasswordContpaq" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Exertus#12345</Value>
     </Setting>
     <Setting Name="ConnectionStringContpaq" Type="System.String" Scope="User">
       <Value Profile="(Default)">Database=#BASEDATOS#;Server=10.10.15.60\crea;Integrated Security=False;User ID=sa;Password=crea4.0#17</Value>
@@ -61,6 +58,9 @@
     </Setting>
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Database=crea_Sdk;Server=10.73.10.20\crea;Integrated Security=False;User ID=sa;Password=crea4.0#17</Value>
+    </Setting>
+    <Setting Name="PathLayoutRecurrente" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Crea_4\Crea_CaSdk_Comercial\Layout\Layout_SDK_FAC.xlsx</Value>
     </Setting>
   </Settings>
 </SettingsFile>
