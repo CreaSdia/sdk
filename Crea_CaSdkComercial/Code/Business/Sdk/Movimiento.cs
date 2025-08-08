@@ -19,20 +19,29 @@ namespace SdkCreaComercial.Business.Sdk
         public List<SerieCapa> SerieCapas { get; set; } = new List<SerieCapa>();
         public SerieCapa SerieCapa { get; set; }
 
+        public List<CampoAdicional> DatosAdenda { get; set; } = new List<CampoAdicional>();
+
         public Movimiento (){}
 
         public Movimiento(bool asignarLote, List<CampoAdicional> camposAdicionales, int fila = 0)
         {
             var camposAdicionalesCopia = new List<CampoAdicional>();
+            DatosAdenda = new List<CampoAdicional>();
 
             foreach (var campo in camposAdicionales.Where(e => e.TipoCampo == "mov"))
             {
                 camposAdicionalesCopia.Add(new CampoAdicional(campo));
             }
+            foreach (var campo in camposAdicionales.Where(e => e.TipoCampo == "mov-datosaddenda"))
+            {
+                DatosAdenda.Add(new CampoAdicional(campo));
+            }
 
             AsignarLote = asignarLote;
             FilaExcel = fila;
             CamposAdicionales = camposAdicionalesCopia;
+
+
         }
 
         public void CrearMovimintoSdk(string codigoProducto, double unidades, double precio, string codigoAlmacen,

@@ -283,6 +283,8 @@ namespace SdkCreaComercial.Sdk
 
         private string _error = "";
 
+        public string Empresa { get; set; }
+
         public Sdk()
         {
         }
@@ -488,6 +490,8 @@ namespace SdkCreaComercial.Sdk
 
             BorrarDocumento(documento.DocumentoId);
 
+
+
             error = GenerarArchivos(documento);
 
             return error;
@@ -550,6 +554,9 @@ namespace SdkCreaComercial.Sdk
                     _error = GetError(errorId, "fCalculaMovtoSerieCapa", movimiento.FilaExcel);
                 }
             }
+
+            var facturaAdenda = new FacturaAdenda(Empresa);
+            facturaAdenda.GuardarAdenda(movimientoId, movimiento.DatosAdenda);
 
             if (!movimiento.AsignarLote) return "";
 

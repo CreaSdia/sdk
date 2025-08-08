@@ -11,7 +11,10 @@ namespace SdkCreaComercial.Code.Business
         public string Nombre { get; set; }
         public string Valor { get; set; } = "";
         public int Columna { get; set; }
-        public string TipoCampo { get; set; }
+        public string TipoCampo { 
+            get; 
+            set;
+        }
 
         public CampoAdicional(){}
 
