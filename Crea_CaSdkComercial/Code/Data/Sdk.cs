@@ -283,6 +283,8 @@ namespace SdkCreaComercial.Sdk
 
         private string _error = "";
 
+        public string Empresa { get; set; }
+
         public Sdk()
         {
         }
@@ -553,13 +555,16 @@ namespace SdkCreaComercial.Sdk
                 }
             }
 
+            var facturaAdenda = new FacturaAdenda(Empresa);
+            facturaAdenda.GuardarAdenda(movimientoId, movimiento.DatosAdenda);
+
             if (!movimiento.AsignarLote) return "";
 
             foreach (var serieCapa in movimiento.SerieCapas)
             {
                 AltaMovimientoSerieCapa(movimientoId, serieCapa);
             }
-            //todo aca insertar los datos de la addenda
+
             return _error;
         }
 

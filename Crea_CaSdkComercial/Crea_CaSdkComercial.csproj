@@ -81,6 +81,7 @@
     <Compile Include="Code\Business\Utilities.cs" />
     <Compile Include="Code\Contpaqi\AdmClientes.cs" />
     <Compile Include="Code\Contpaqi\AdmCuentasBancarias.cs" />
+    <Compile Include="Code\Contpaqi\AdmDatosAddenda.cs" />
     <Compile Include="Code\Contpaqi\AdmFoliosDigitales.cs" />
     <Compile Include="Code\Data\ContpaqiDbContext.cs" />
     <Compile Include="Code\Data\Sdk.cs" />

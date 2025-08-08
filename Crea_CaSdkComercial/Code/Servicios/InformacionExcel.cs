@@ -47,6 +47,7 @@ namespace Crea_CaSdkComercial.Code.Servicios
 
             _sdk = sdk;
             Empresa = _datos.Empresa;
+            _sdk.Empresa = _datos.Empresa;
             AsuntoCorreo = _datos.AsuntoCorreo;
             PlantillaCorreo = _datos.PlantillaCorreo;
         }

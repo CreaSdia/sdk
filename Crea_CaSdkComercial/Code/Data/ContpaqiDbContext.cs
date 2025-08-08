@@ -20,10 +20,15 @@ namespace Crea_CaSdkComercial.Code.Data
 
             modelBuilder.Entity<AdmCuentasBancarias>().ToTable("admCuentasBancarias")
                 .HasKey<int>(e => e.CIDCUENTA);
+
+            modelBuilder.Entity<AdmDatosAddenda>().ToTable("admDatosAddenda")
+                .HasKey<int>(e => e.CIDAUTOINCSQL);
         }
 
         public DbSet<AdmFoliosDigitales> FoliosDigitaleses { get; set; }
         public DbSet<AdmClientes> Clientes { get; set; }
         public DbSet<AdmCuentasBancarias> CuentasBancarias { get; set; }
+
+        public DbSet<AdmDatosAddenda> DatosAddenda { get; set; }
     }
 }
