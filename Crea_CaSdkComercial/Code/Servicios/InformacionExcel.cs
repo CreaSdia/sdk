@@ -225,9 +225,12 @@ namespace Crea_CaSdkComercial.Code.Servicios
 
             if (esFactura)
             {
-                var fechaFabricacion = _datos.ObtenerFechaContpaq(fila, _datos.CamposDocumento["cfechafabricacion"]);
-                var numeroLote = ws.Cells[fila, _datos.CamposDocumento["cnumerolote"]].Text;
-                var fechaCaducidad = _datos.ObtenerFechaContpaq(fila, _datos.CamposDocumento["cfechacaducidad"]);
+                var fechaFabricacion =
+                    _datos.ObtenerFechaContpaq(_datos.ObtenerCampoDocumento(fila, "cfechafabricacion"));
+                    //_datos.["cfechafabricacion"]);
+                var numeroLote = _datos.ObtenerCampoDocumento(fila, "cnumerolote"); //ws.Cells[fila, _datos.CamposDocumento["cnumerolote"]].Text;
+                var fechaCaducidad = _datos.ObtenerFechaContpaq(_datos.ObtenerCampoDocumento(fila, "cfechacaducidad"));
+                    //_datos.CamposDocumento["cfechacaducidad"]);
 
                 serieCapa.CrearSerieCapaSdk(unidades, numeroLote, fechaCaducidad, fechaFabricacion, tipoCambio, series,
                     pedimento, agencia, fechaPedimento);
@@ -317,7 +320,7 @@ namespace Crea_CaSdkComercial.Code.Servicios
 
         private string ObtenerValorCampoOpcional(int fila, string nombreCampo, string valorDefault = "")
         {
-            return _datos.CamposOpcionales.ContainsKey(nombreCampo)
+            return _datos.CamposOpcionales.ContainsKey(nombreCampo) && _datos.CamposOpcionales[nombreCampo] != 0
                 ? _datos.Worksheet.Cells[fila, _datos.CamposOpcionales[nombreCampo]].Text
                 : valorDefault;
         }

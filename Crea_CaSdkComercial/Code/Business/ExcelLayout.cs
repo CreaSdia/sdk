@@ -217,6 +217,8 @@ namespace Crea_CaSdkComercial.Code.Business
 
         public string ObtenerFechaContpaq(int fila, int columna)
         {
+            if (columna == 0) return "";
+
             var fechaString = Worksheet.Cells[fila, columna].Text;
             var fechaValida = DateTime.TryParseExact(fechaString, "dd/MM/yyyy", CultureInfo.InvariantCulture,
                 DateTimeStyles.None, out var fecha);
@@ -230,6 +232,13 @@ namespace Crea_CaSdkComercial.Code.Business
                 DateTimeStyles.None, out var fecha);
 
             return fechaValida ? fecha.ToString("MM/dd/yyyy") : "";
+        }
+
+        public string ObtenerCampoDocumento(int fila, string nombreCampo, string valorDefault="")
+        {
+            return CamposDocumento.ContainsKey(nombreCampo) && CamposDocumento[nombreCampo] != 0
+                ? Worksheet.Cells[fila, CamposDocumento[nombreCampo]].Text
+                : valorDefault;
         }
     }
 }
