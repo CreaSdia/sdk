@@ -12,7 +12,7 @@ namespace Crea_CaSdkComercial {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.14.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -205,19 +205,6 @@ namespace Crea_CaSdkComercial {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Database=#BASEDATOS#;Server=10.10.15.60\\crea;Integrated Security=False;User ID=sa" +
-            ";Password=crea4.0#17")]
-        public string ConnectionStringContpaq {
-            get {
-                return ((string)(this["ConnectionStringContpaq"]));
-            }
-            set {
-                this["ConnectionStringContpaq"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Crea 4.0")]
         public string SenderName {
             get {
@@ -242,19 +229,6 @@ namespace Crea_CaSdkComercial {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Database=crea_Sdk;Server=10.73.10.20\\crea;Integrated Security=False;User ID=sa;Pa" +
-            "ssword=crea4.0#17")]
-        public string ConnectionString {
-            get {
-                return ((string)(this["ConnectionString"]));
-            }
-            set {
-                this["ConnectionString"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\Crea_4\\Crea_CaSdk_Comercial\\Layout\\Layout_SDK_FAC.xlsx")]
         public string PathLayoutRecurrente {
             get {
@@ -262,6 +236,32 @@ namespace Crea_CaSdkComercial {
             }
             set {
                 this["PathLayoutRecurrente"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database=#BASEDATOS#;Server=localhost\\SqlExpress2022;Integrated Security=False;Us" +
+            "er ID=sa;Password=Exertus#12345")]
+        public string ConnectionStringContpaq {
+            get {
+                return ((string)(this["ConnectionStringContpaq"]));
+            }
+            set {
+                this["ConnectionStringContpaq"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database=#BASEDATOS#;Server=localhost\\SqlExpress2022;Integrated Security=False;Us" +
+            "er ID=sa;Password=Exertus#12345")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+            set {
+                this["ConnectionString"] = value;
             }
         }
     }
